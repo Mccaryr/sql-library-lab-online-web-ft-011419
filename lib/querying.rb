@@ -5,7 +5,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   "SELECT characters.name, characters.motto FROM characters
-  GROUP BY characters.name ORDER BY MAX(characters.motto);"
+  GROUP BY characters.name ORDER BY characters.motto LIMIT 1;"
 end
 
 
